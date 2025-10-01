@@ -1,0 +1,64 @@
+{
+  "backgroundColor": "#FFFFFF",
+  "borderColor": "#E0DEDE",
+  "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
+  "borderWidth": "1",
+  "bottomRow": 43,
+  "boxShadow": "{{appsmith.theme.boxShadow.appBoxShadow}}",
+  "defaultModel": "",
+  "dynamicBindingPathList": [
+    {
+      "key": "theme"
+    },
+    {
+      "key": "borderRadius"
+    },
+    {
+      "key": "boxShadow"
+    }
+  ],
+  "dynamicHeight": "FIXED",
+  "dynamicTriggerPathList": [
+    {
+      "key": "onResetClick"
+    }
+  ],
+  "events": [
+    "onResetClick"
+  ],
+  "isCanvas": false,
+  "isLoading": false,
+  "isSearchWildcard": true,
+  "isVisible": true,
+  "key": "3w3zxk9bix",
+  "leftColumn": 14,
+  "maxDynamicHeight": 9000,
+  "minDynamicHeight": 4,
+  "mobileBottomRow": 43,
+  "mobileLeftColumn": 14,
+  "mobileRightColumn": 37,
+  "mobileTopRow": 13,
+  "needsErrorInfo": false,
+  "onResetClick": "{{showAlert('Successfully reset!!', '');}}",
+  "parentColumnSpace": 20.5625,
+  "parentId": "0",
+  "parentRowSpace": 10,
+  "renderMode": "CANVAS",
+  "rightColumn": 37,
+  "srcDoc": {
+    "css": "html, body {\n  height: 100%;\n  margin: 0;\n}\n\n#interfaz {\n  position: relative;\n  width: 100%;\n  height: 100%;\n}\n\n#map {\n  position: absolute;\n  width: 100%;\n  height: 100%;\n}",
+    "html": "<!DOCTYPE html>\n<html>\n  <head>\n    <meta charset=\"UTF-8\">\n  <title>MI SITIO DE TAXIS</title>\n  <!-- MapLibre GL -->\n  <link rel=\"stylesheet\"\n        href=\"https://unpkg.com/maplibre-gl@4.7.0/dist/maplibre-gl.css\"\n        crossorigin=\"anonymous\">\n  <script src=\"https://unpkg.com/maplibre-gl@4.7.0/dist/maplibre-gl.js\"\n          crossorigin=\"anonymous\"></script>\n  </head>\n  <body>\n\n<div id=\"main\">\n  <div id=\"map\">\n  </div>\n</div>\n\n  </body>\n</html>\n",
+    "js": "const map = new maplibregl.Map({\n  container: \"map\",\n  center: [-99.13, 19.43],\n  zoom: 6,\n  minZoom: 6,\n  maxZoom: 21,\n  style: \"/style.json\"\n});\nmap.addControl(new maplibregl.NavigationControl(), 'bottom-right');\n// disable map rotation using right click + drag\nmap.dragRotate.disable();\n// disable map rotation using keyboard\nmap.keyboard.disable();\n// disable map rotation using touch rotation gesture\nmap.touchZoomRotate.disableRotation();\nappsmith.onReady(() => {\n  /*\n  \t * This handler function will get called when parent application is ready.\n  \t * Initialize your component here\n  \t * more info - https://docs.appsmith.com/reference/widgets/custom#onready\n  \t */\n});"
+  },
+  "theme": "{{appsmith.theme}}",
+  "topRow": 13,
+  "type": "CUSTOM_WIDGET",
+  "uncompiledSrcDoc": {
+    "css": "html, body {\n     height:100%; margin:0;\n}\n\n#interfaz { \n    position: relative; \n    width:100%;\n    height:100%;\n}\n\n#map { \n    position: absolute;\n    width:100%;\n    height:100%;\n}",
+    "html": "<!DOCTYPE html>\n<html>\n  <head>\n    <meta charset=\"UTF-8\">\n  <title>MI SITIO DE TAXIS</title>\n  <!-- MapLibre GL -->\n  <link rel=\"stylesheet\"\n        href=\"https://unpkg.com/maplibre-gl@4.7.0/dist/maplibre-gl.css\"\n        crossorigin=\"anonymous\">\n  <script src=\"https://unpkg.com/maplibre-gl@4.7.0/dist/maplibre-gl.js\"\n          crossorigin=\"anonymous\"></script>\n  </head>\n  <body>\n\n<div id=\"main\">\n  <div id=\"map\">\n  </div>\n</div>\n\n  </body>\n</html>\n",
+    "js": "const map = new maplibregl.Map({\n    container : \"map\",\n    center    : [-99.13, 19.43],\n    zoom      : 6,\n    minZoom   : 6,\n    maxZoom   : 21,\n\n  style: \"/style.json\"\n  });\n\n  map.addControl(new maplibregl.NavigationControl(),'bottom-right');\n  // disable map rotation using right click + drag\n  map.dragRotate.disable();\n  // disable map rotation using keyboard\n  map.keyboard.disable();\n  // disable map rotation using touch rotation gesture\n  map.touchZoomRotate.disableRotation();\n\nappsmith.onReady(() => {\n/*\n\t * This handler function will get called when parent application is ready.\n\t * Initialize your component here\n\t * more info - https://docs.appsmith.com/reference/widgets/custom#onready\n\t */\n});"
+  },
+  "version": 1,
+  "widgetId": "v1ciwe8mke",
+  "widgetName": "Custom1"
+}
