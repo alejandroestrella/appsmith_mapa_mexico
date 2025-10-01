@@ -1,11 +1,11 @@
 {
-  "gitSyncId": "68d31e4889676e1584eab87c_79e3aea5-f995-4bf0-a1bc-240ed12c0713",
+  "gitSyncId": "68d31e4889676e1584eab87c_059e2a2d-fd11-46d4-ad88-011a0f55e37f",
   "id": "Page1_Query1",
   "pluginId": "postgres-plugin",
   "pluginType": "DB",
   "unpublishedAction": {
     "actionConfiguration": {
-      "body": "SELECT * FROM locations ",
+      "body": "SELECT * FROM locations;",
       "encodeParamsToggle": true,
       "paginationType": "NONE",
       "pluginSpecifiedTemplates": [
@@ -25,7 +25,7 @@
     "dynamicBindingPathList": [],
     "name": "Query1",
     "pageId": "Page1",
-    "runBehaviour": "AUTOMATIC",
+    "runBehaviour": "MANUAL",
     "userSetOnLoad": false
   }
 }
